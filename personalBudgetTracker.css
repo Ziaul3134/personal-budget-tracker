@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: whitesmoke;
+}
+
+.heading{
+    text-align: center;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#userInput{
+    display: grid;
+    text-align: center;
+    gap: 5px;
+    margin: 10px 20px;
+    padding: 80px;
+    border: 2px solid teal;
+    border-radius: 10px;
+}
+
+label, input{
+    padding: 10px;
+    border: 2px solid rgb(3, 58, 58);
+    border-radius: 10px;
+    font-weight: bolder;
+    
+}
+
+#inputExpenseDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.expenseLabelCSS{
+    
+    box-sizing: border-box;
+}
+
+.expenseInputCSS{
+    flex: 1;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+
+#btnDiv{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    width: 100px;
+    margin-top: 10px;
+    border: 2px solid rgb(29, 163, 163);
+    border-radius: 10px;
+    background-color: teal;
+    color: whitesmoke;
+}
+
+#deleteDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#deleteBtn{
+    padding: 10px;
+    width: 150px;
+    margin-top: 10px;
+    border: 2px solid rgb(29, 163, 163);
+    border-radius: 10px;
+    background-color: #e6dede;
+    color: rgb(218, 36, 36);
+    font-weight: bolder;
+    
+}
+
+#calBtn{
+    display: none;
+}
+
+#calBtn button:disabled{
+    background-color: #444;
+    border-color: #555;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#outputPage{
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(223, 201, 201);
+}
+
+#result{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px;
+    padding: 20px;
+}
+
+#result p{
+    background: #132238;
+    border: 2px solid teal;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+#result p:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.statusHighlight{
+    grid-column: 1 / -1;
+    background: teal;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+input::placeholder {
+    font-size: 11px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

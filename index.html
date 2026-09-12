@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="personalBudgetTracker.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="heading">📊<br>Welcome to Personal budget Tracker App</h1>
+        <h4 class="heading" id="head2">Track your income. Manage your expenses. Build a better financial future</h4>
+    </header>
+
+    <main id="inputPage">
+        <div id="userInput">
+            <label for="name"> Name:
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </label><br>
+
+            <label for="income">Income:
+                <input type="number" id="income" placeholder="Enter your monthly income" required>
+            </label><br>
+
+            <label for="expenseNumber">Number of Expense:
+                <input type="number" id="expenseNumber" placeholder="How many expenses did you have?" required>
+            </label><br>
+            
+            <div id="inputExpenseDiv"></div>
+
+            <div id="calBtn">
+                <button disabled>Calculate</button>
+            </div>
+        </div>
+
+        <div id="btnDiv">
+            <button id="button">Enter</button>
+        </div>
+        <div id="deleteDiv">
+            <button id="deleteBtn">Delete Old Data⚠</button>
+        </div>
+    </main>
+
+    <div id="outputPage" style="display: none;">
+        <h2>Result of Your Calculated Budget</h2>
+        <div id="result"></div>
+        <button id="backBtn" onclick="backHome()">Back to Home</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
